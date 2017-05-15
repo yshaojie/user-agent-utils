@@ -69,7 +69,7 @@ public enum OperatingSystem {
 		
 	ANDROID(		Manufacturer.GOOGLE,null, 0, "Android", new String[] { "Android" },  new String[] {"Ubuntu"}, DeviceType.MOBILE, null ),
 		ANDROID7(       Manufacturer.GOOGLE,OperatingSystem.ANDROID, 7, "Android 7.x", new String[] { "Android 7", "Android-7" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
-        ANDROID7_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID6, 60, "Android 7.x Tablet", new String[] { "Android 7", "Android-7"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
+        ANDROID7_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID7, 60, "Android 7.x Tablet", new String[] { "Android 7", "Android-7"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
         ANDROID6(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 6, "Android 6.x", new String[] { "Android 6", "Android-6" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
         ANDROID6_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID6, 60, "Android 6.x Tablet", new String[] { "Android 6", "Android-6"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
         ANDROID5(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 5, "Android 5.x", new String[] { "Android 5", "Android-5" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
@@ -105,7 +105,7 @@ public enum OperatingSystem {
 	 * iOS4, with the release of the iPhone 4, Apple renamed the OS to iOS.
 	 */	
 	IOS(			Manufacturer.APPLE,null, 2, "iOS", new String[] { "iPhone", "like Mac OS X" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
-        iOS10_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 90, "iOS 9 (iPhone)", new String[] { "iPhone OS 10" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+        iOS10_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 90, "iOS 10 (iPhone)", new String[] { "iPhone OS 10" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS9_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 90, "iOS 9 (iPhone)", new String[] { "iPhone OS 9" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS8_4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 49, "iOS 8.4 (iPhone)", new String[] { "iPhone OS 8_4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS8_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 48, "iOS 8.3 (iPhone)", new String[] { "iPhone OS 8_3" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions

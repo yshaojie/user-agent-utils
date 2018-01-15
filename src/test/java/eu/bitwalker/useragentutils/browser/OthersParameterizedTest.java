@@ -1,13 +1,12 @@
 package eu.bitwalker.useragentutils.browser;
 
-import static java.util.Arrays.asList;
+import eu.bitwalker.useragentutils.Browser;
+import eu.bitwalker.useragentutils.OperatingSystem;
+import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Collection;
 
-import org.junit.runners.Parameterized.Parameters;
-
-import eu.bitwalker.useragentutils.Browser;
-import eu.bitwalker.useragentutils.OperatingSystem;
+import static java.util.Arrays.asList;
 
 public class OthersParameterizedTest extends AbstractUserAgentParameterizedTest {
 
@@ -97,10 +96,10 @@ public class OthersParameterizedTest extends AbstractUserAgentParameterizedTest 
 				{"Mozilla/5.0 (iPad; CPU OS 9_0_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13A452", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS9_IPAD},
 				{"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS9_IPHONE},
 				{"Mozilla/5.0 (iPad; CPU OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Mobile/11D257", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS7_IPAD},
-				{"Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B440", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS8_1_IPAD},
-				{"Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B411", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS8_1_IPHONE},
+				{"Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B440", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS8_4_IPAD},
+				{"Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B411", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS8_IPHONE},
 				{"Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B329", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS6_IPHONE},
-				{"Mozilla/5.0 (iPhone; CPU iPhone OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12D508 AolApp/3.2.1.15", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS8_2_IPHONE},
+				{"Mozilla/5.0 (iPhone; CPU iPhone OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12D508 AolApp/3.2.1.15", Browser.APPLE_WEB_KIT, null, OperatingSystem.iOS8_IPHONE},
 				
 				{"Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.0.2) Gecko/20020924 AOL/7.0", Browser.MOZILLA, null, OperatingSystem.MAC_OS_X},
 
@@ -108,7 +107,7 @@ public class OthersParameterizedTest extends AbstractUserAgentParameterizedTest 
 				{"BlackBerry9650/5.0.0.732 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105", Browser.UNKNOWN, null, OperatingSystem.BLACKBERRY},
 
 				// TODO: discover version of firefox-mobile
-				{"Mozilla/5.0 (iPad; CPU OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/1.2 Mobile/12F69 Safari/600.1.4", Browser.FIREFOX_MOBILE_IOS, null, OperatingSystem.iOS8_3_IPAD},
+				{"Mozilla/5.0 (iPad; CPU OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/1.2 Mobile/12F69 Safari/600.1.4", Browser.FIREFOX_MOBILE_IOS, null, OperatingSystem.iOS8_4_IPAD},
 				
 		});
 	}

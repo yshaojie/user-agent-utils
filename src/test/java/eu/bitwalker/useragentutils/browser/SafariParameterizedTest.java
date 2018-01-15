@@ -1,13 +1,12 @@
 package eu.bitwalker.useragentutils.browser;
 
-import static java.util.Arrays.asList;
+import eu.bitwalker.useragentutils.Browser;
+import eu.bitwalker.useragentutils.OperatingSystem;
+import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Collection;
 
-import org.junit.runners.Parameterized.Parameters;
-
-import eu.bitwalker.useragentutils.Browser;
-import eu.bitwalker.useragentutils.OperatingSystem;
+import static java.util.Arrays.asList;
 
 public class SafariParameterizedTest extends AbstractUserAgentParameterizedTest {
 
@@ -100,9 +99,9 @@ public class SafariParameterizedTest extends AbstractUserAgentParameterizedTest 
 				{		"Mozilla/5.0 (iPad; CPU OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) 1Password/3.7.2/370204 (like Mobile/8C148 Safari/6533.18.5)", 
 							Browser.MOBILE_SAFARI, "6.0.1", OperatingSystem.iOS6_IPAD},
 				{		"Mozilla/5.0 (iPad; CPU OS 8_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) GSA/4.2.2.38484 Mobile/12B435 Safari/9537.53", 
-							Browser.MOBILE_SAFARI, null, OperatingSystem.iOS8_1_IPAD},
+							Browser.MOBILE_SAFARI, null, OperatingSystem.iOS8_4_IPAD},
 				{		"Mozilla/5.0 (iPad; CPU OS 8_0_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) GSA/4.2.2.38484 Mobile/12A405 Safari/9537.53", 
-							Browser.MOBILE_SAFARI, null, OperatingSystem.iOS8_IPAD},
+							Browser.MOBILE_SAFARI, null, OperatingSystem.iOS8_4_IPAD},
 				
 			});
 	}

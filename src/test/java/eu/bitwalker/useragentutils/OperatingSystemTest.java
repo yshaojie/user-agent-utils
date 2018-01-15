@@ -37,18 +37,13 @@
 
 package eu.bitwalker.useragentutils;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.Test;
-
-import eu.bitwalker.useragentutils.DeviceType;
-import eu.bitwalker.useragentutils.OperatingSystem;
+import static org.junit.Assert.*;
 
 /**
  * @author harald
@@ -444,12 +439,12 @@ public class OperatingSystemTest {
 		testAgents(iPhone6, OperatingSystem.iOS6_IPHONE);
 		testAgents(iPhone7, OperatingSystem.iOS7_IPHONE);
 		testAgents(iPhone8, OperatingSystem.iOS8_IPHONE);
-		testAgents(iPhone8_1, OperatingSystem.iOS8_1_IPHONE);
-		testAgents(iPhone8_3, OperatingSystem.iOS8_3_IPHONE);
+		testAgents(iPhone8_1, OperatingSystem.iOS8_IPHONE);
+		testAgents(iPhone8_3, OperatingSystem.iOS8_IPHONE);
 		testAgents(iPods, OperatingSystem.MAC_OS_X_IPOD);
 		testAgents(iPadIos6, OperatingSystem.iOS6_IPAD);
 		testAgents(iPadIos7, OperatingSystem.iOS7_IPAD);
-		testAgents(iPadIos8, OperatingSystem.iOS8_IPAD);
+		testAgents(iPadIos8, OperatingSystem.iOS8_4_IPAD);
 		testAgents(iPadIos8_4, OperatingSystem.iOS8_4_IPAD);
 		testAgents(iPad, OperatingSystem.MAC_OS_X_IPAD);
 		testAgents(blackberries, OperatingSystem.BLACKBERRY);
@@ -534,7 +529,7 @@ public class OperatingSystemTest {
 	}
 	
 	/**
-	 * Test method for {@link eu.bitwalker.useragentutils.OperatingSystem#valueOf(String)} 
+	 * Test method for {@link eu.bitwalker.useragentutils.OperatingSystem(String)}
 	 */
 	@Test
 	public void testValueOfString() {
